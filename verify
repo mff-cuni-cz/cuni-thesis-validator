@@ -1,3 +1,3 @@
 #!/bin/sh
 
-verapdf --profile uk-profile.xml $@
+verapdf --profile /uk-profile.xml $@
