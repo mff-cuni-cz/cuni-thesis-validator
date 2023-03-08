@@ -1,9 +1,7 @@
-FROM java:jre-alpine
+FROM ibmjava:jre
 
 COPY verapdf/ /usr/bin/verapdf
 COPY verify /usr/bin/verify
-COPY UK-7987-version1-custom8.xml uk-profile.xml
+COPY UK-7987-version1-custom8.xml /opt/uk-profile.xml
 
 ENV PATH="/usr/bin/verapdf:${PATH}"
-
-
